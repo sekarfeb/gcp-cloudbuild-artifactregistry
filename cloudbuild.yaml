@@ -16,7 +16,7 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push',  'us-central1-docker.pkg.dev/third-project-387904/my-sample-artifact-repo/my-app:${SHORT_SHA}']
 
-# Store images in Google Artifact Registry 
+# Store images in Google Artifact Registry  
 images:
   - us-central1-docker.pkg.dev/third-project-387904/my-sample-artifact-repo/my-app:${SHORT_SHA}
   - us-central1-docker.pkg.dev/third-project-387904/my-sample-artifact-repo/my-app:latest
